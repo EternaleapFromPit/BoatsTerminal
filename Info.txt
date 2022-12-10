@@ -1,0 +1,102 @@
+﻿/**Напишите консольное приложение на языке C# для решения следующей задачи. Код должен быть тестируемым, поддерживаемым и легко расширяемым.
+
+Спроектировать приложение для паромного терминала. Терминал обслужиавает 2 вида паромов:
+
+1. Малый паром: перевозит только малые транспортные средства (массой до 3.5 т.), вместимость - до 9 малых транспортных средств. С легковых автомобилей взымается плата в размере 300 руб., с микроавтобусов - 400 руб.
+2. Большой паром: перевозит только большие транспортные средства (массой от 3.5 до 7.5 т.), вместимость - до 5 больших транспортных средств. С автобусов взымается 500 руб., с грузовиков — 750 руб.
+
+Задача: Приложение должно отображать весь доход, полученный от продажи билетов за перевозку транспортных средств.
+**/
+
+internal class Program
+{
+  	SmallShip small = new SmallShip();
+  
+    static void Main(string[] args)
+    {
+        foreach (var Vehicle in Vehicles)
+        {
+           
+        }
+      
+      
+    }
+}
+
+interface IShip<IVehicle>
+{
+  int Capacity { get; }
+  void AddWeight(IVehicle vehicle);
+  int GetTotalCost();
+}
+
+interface IVehicle
+{
+  int GetCost() 
+}
+
+public class PriceProvider(IVehicle vehicle) : IPriceProvider
+{
+  
+  public double GetPrice(Vehicle)
+  {
+    SqlQuery(Vehicle.Id)
+  }
+}
+  
+public abstract SmallVehicle : IVehicle
+{
+	public int GetCost() => 300;
+}
+
+public absctact HugeVehicle : IVehicle
+{
+	private IPriceProvider _priceProvider;
+  
+  HugeVehicle(IPriceProvider priceProvider)
+  {
+  	_priceProvider = priceProvider;
+  }
+
+	public double GetCost() => _priceProvider.GetCost(this);
+}
+
+public Bus : HugeVehicle
+{
+ public int GetCost() => 500;
+}
+
+public class SmallShip<SmallVehicle> : IShip
+{
+  public int GetCapacity() => 9;
+    
+  public void AddWeight(SmallVehicle Vehicle)
+  {
+  		if(GetCapacity() == Vehicles.Count())
+    		throw new ExceptionTooMuchVehicles();
+  }
+  int GetTotalCost() => 
+}
+
+public class ExtendedSmallShip : SmallShip<SmallVehicle>
+{
+	int Capacity { get { return  } }
+}
+
+public class HugeShip<HugeVehicle> : IShip
+{
+	List<HugeVehicle> Vehicles = new LIst();
+
+  public int GetCapacity() => 5
+  
+    public void AddWeight(HugeVehicle Vehicle)
+  {
+  	if(GetCapacity() == Vehicles.Count())
+    	throw new ExceptionTooMuchVehicles();
+  
+  }
+  
+  int GetTotalCost() => Vehicles.Sum(x => x.GetCost())  
+  
+}
+

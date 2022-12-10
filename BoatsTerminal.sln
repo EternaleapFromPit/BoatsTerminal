@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoatsTerminalTest", "BoatsTerminalTest\BoatsTerminalTest.csproj", "{7FB451EB-BFDC-4CBF-91A4-C40C57BCF02E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoatsTerminal", "BoatsTerminal\BoatsTerminal.csproj", "{7CFCDDC4-871B-4F35-AF1D-A99B75F5A0D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FB451EB-BFDC-4CBF-91A4-C40C57BCF02E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB451EB-BFDC-4CBF-91A4-C40C57BCF02E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB451EB-BFDC-4CBF-91A4-C40C57BCF02E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB451EB-BFDC-4CBF-91A4-C40C57BCF02E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CFCDDC4-871B-4F35-AF1D-A99B75F5A0D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CFCDDC4-871B-4F35-AF1D-A99B75F5A0D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CFCDDC4-871B-4F35-AF1D-A99B75F5A0D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CFCDDC4-871B-4F35-AF1D-A99B75F5A0D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05A0EC4F-AF7E-4FAE-92F8-7962B9C2EB5E}
+	EndGlobalSection
+EndGlobal
