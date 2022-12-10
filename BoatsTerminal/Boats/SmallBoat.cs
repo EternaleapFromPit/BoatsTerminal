@@ -1,21 +1,13 @@
-﻿using BoatsTerminal.Vehicles;
-
-namespace BoatsTerminal.Boats
+﻿namespace BoatsTerminal.Boats
 {
-    public class SmallBoat : IBoat
+    public class SmallBoat : Boat
     {
-        int _currentCapacity = 9;
-
-        public double MinVehicleWeigth => 0;
-
-        public double MaxVehicleWeigth => 3.5;
-
-        public int CurrentCapacity => _currentCapacity;
-
-        public void Load(IVehicle vehicle)
+        public SmallBoat() : base(9)
         {
-            if (_currentCapacity != 0)
-                _currentCapacity--;
         }
+
+        public override double MinVehicleWeigth => 0;
+
+        public override double MaxVehicleWeigth => 3.5;
     }
 }

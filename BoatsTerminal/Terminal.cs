@@ -28,10 +28,11 @@ namespace BoatsTerminal
         public void LoadVehicle(IVehicle vehicle)
         {
             var boat = GetBoatForLoading(vehicle);
-            _logger.Log($"Loading {vehicle.Name} onto {boat.GetType()}");
 
             if (boat == null)
                 throw new InvalidOperationException("No free boats to load your Vehicle");
+
+            _logger.Log($"Loading {vehicle.Name} onto {boat.GetType()}");
 
             boat.Load(vehicle);
             _vehicles.Add(vehicle);

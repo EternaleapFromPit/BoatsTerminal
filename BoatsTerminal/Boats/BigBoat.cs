@@ -2,20 +2,15 @@
 
 namespace BoatsTerminal.Boats
 {
-    class BigBoat : IBoat
+    public class BigBoat : Boat
     {
-        int _currentCapacity = 5;
-
-        public double MinVehicleWeigth => 3.5;
-
-        public double MaxVehicleWeigth => 7.5;
-
-        public int CurrentCapacity => _currentCapacity;        
-
-        public void Load(IVehicle vehicle)
+        public BigBoat() : base(5)
         {
-            if(_currentCapacity != 0)
-                _currentCapacity--;
         }
+
+        public override double MinVehicleWeigth => 3.5;
+
+        public override double MaxVehicleWeigth => 7.5;
+
     }
 }

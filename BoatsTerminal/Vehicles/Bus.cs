@@ -1,6 +1,6 @@
 ﻿namespace BoatsTerminal.Vehicles
 {
-    internal class Bus : IVehicle
+    public class Bus : IVehicle
     {
         public string Name => "Bus";
 
